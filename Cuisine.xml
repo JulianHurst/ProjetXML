@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
 <Cuisines>
 	<ListeRecette>		
@@ -91,7 +91,7 @@
 			<Desc></Desc>
 		</Recette>
 	</ListeRecette>
-	<ListeAuteur>			
+	<ListeAuteur>
 		<Auteur IDAuteur="Kevin">
 			<Nom>Gare à Bedian</Nom>
 			<Age>25</Age>
@@ -128,7 +128,7 @@
 	<Categories desc="Categories de plats">
 		<Category nom="Entrée" desc="">
 			<SousCategory nom="Entrées Chaudes" desc="">
-				<Recettes ref="A"/>				
+				<Recettes ref="A"/>
 			</SousCategory>
 			<SousCategory nom="Entrées Froides" desc="">
 				<Recettes ref="B"></Recettes>
