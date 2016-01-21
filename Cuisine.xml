@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
+<Cuisines>
+	<ListeRecette>		
+		<Recette ID="A">
+			<Titre>Verrine au muesli, pommes et fromage blanc</Titre>
+			<Resume>Une verrine</Resume>
+			<Photo>http://www.odelices.com/images/recettes/verrine_muesli_fromage_blanc_pommes_spiruline-360x380.jpg</Photo>
+			<Date>21-01-2016</Date>
+			<Difficulte>Façile</Difficulte>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>80</Quantite>
+					<Unite>g</Unite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>400</Quantite>
+					<Unite>g</Unite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>40</Quantite>
+					<Unite>g</Unite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>1</Quantite>
+					<Unite>cuillerée</Unite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>2</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>1</Quantite>
+					<Unite>poignée</Unite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>4</NbPersonnes>
+			<TpsPreparation>10 min</TpsPreparation>
+			<TpsCuisson>-</TpsCuisson>
+			<TpsRepos>-</TpsRepos>
+			<Desc>Une verrine</Desc>
+		</Recette>
+		<Recette ID="B">
+			<Titre>Machin</Titre>
+			<Resume></Resume>
+			<Photo></Photo>
+			<Date></Date>
+			<Difficulte></Difficulte>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>20</Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes></NbPersonnes>
+			<TpsPreparation></TpsPreparation>
+			<TpsCuisson></TpsCuisson>
+			<TpsRepos></TpsRepos>
+			<Desc></Desc>
+		</Recette>
+		<Recette ID="C">
+			<Titre></Titre>
+			<Resume></Resume>
+			<Photo></Photo>
+			<Date></Date>
+			<Difficulte></Difficulte>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite></Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes></NbPersonnes>
+			<TpsPreparation></TpsPreparation>
+			<TpsCuisson></TpsCuisson>
+			<TpsRepos></TpsRepos>
+			<Desc></Desc>
+		</Recette>
+		<Recette ID="D">
+			<Titre></Titre>
+			<Resume></Resume>
+			<Photo></Photo>
+			<Date></Date>
+			<Difficulte></Difficulte>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite></Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes></NbPersonnes>
+			<TpsPreparation></TpsPreparation>
+			<TpsCuisson></TpsCuisson>
+			<TpsRepos></TpsRepos>
+			<Desc></Desc>
+		</Recette>
+	</ListeRecette>
+	<ListeAuteur>			
+		<Auteur IDAuteur="Kevin">
+			<Nom>Gare à Bedian</Nom>
+			<Age>25</Age>
+			<Pays>France</Pays>
+			<Sexe>Hermaphrodite</Sexe>
+			<Bio>Biodégradable</Bio>
+			<ref-recette ref="A"/>
+		</Auteur>
+		<Auteur IDAuteur="Julian">
+			<Nom></Nom>
+			<Age></Age>
+			<Pays></Pays>
+			<Sexe></Sexe>
+			<Bio></Bio>
+			<ref-recette ref="B"/>
+		</Auteur>	
+		<Auteur IDAuteur="Machin">
+			<Nom></Nom>
+			<Age></Age>
+			<Pays></Pays>
+			<Sexe></Sexe>
+			<Bio></Bio>
+			<ref-recette ref="C"></ref-recette>
+		</Auteur>
+		<Auteur IDAuteur="Truc">
+			<Nom></Nom>
+			<Age></Age>
+			<Pays></Pays>
+			<Sexe></Sexe>
+			<Bio></Bio>
+			<ref-recette ref="D"></ref-recette>
+		</Auteur>
+	</ListeAuteur>
+	<Categories desc="Categories de plats">
+		<Category nom="Entrée" desc="">
+			<SousCategory nom="Entrées Chaudes" desc="">
+				<Recettes ref="A"/>				
+			</SousCategory>
+			<SousCategory nom="Entrées Froides" desc="">
+				<Recettes ref="B"></Recettes>
+			</SousCategory>
+		</Category>
+		<Category nom="Plat" desc="">
+			<SousCategory nom="Viande" desc="">
+				<Recettes ref="C"></Recettes>
+			</SousCategory>
+			<SousCategory nom="Poisson" desc="">
+				<Recettes ref="D"></Recettes>
+			</SousCategory>
+		</Category>		
+	</Categories>
+	<ListeIngredient>
+		<Ingredient IDIngredient="Pomme">
+			<Nom>Pomme</Nom>
+		</Ingredient>
+	</ListeIngredient>
+</Cuisines>
