@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/h12026079/Desktop/ProjetXML-master/Cuisine.xsl"?>
 <Cuisines>
-	<ListeRecette>		
+	<ListeRecette>
 		<Recette ID="A">
 			<Titre>Verrine au muesli, pommes et fromage blanc</Titre>
 			<Resume>Une verrine</Resume>
@@ -40,24 +41,58 @@
 			<Desc>Une verrine</Desc>
 		</Recette>
 		<Recette ID="B">
-			<Titre>Machin</Titre>
-			<Resume></Resume>
-			<Photo></Photo>
-			<Date></Date>
-			<Difficulte></Difficulte>
+			<Titre>Pâtes au beurre</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
 			<ListeIngredients>
 				<Ingredients>
 					<Quantite>20</Quantite>
 				</Ingredients>
 			</ListeIngredients>
-			<NbPersonnes></NbPersonnes>
-			<TpsPreparation></TpsPreparation>
-			<TpsCuisson></TpsCuisson>
-			<TpsRepos></TpsRepos>
-			<Desc></Desc>
+			<NbPersonnes/>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
 		</Recette>
 		<Recette ID="C">
-			<Titre></Titre>
+			<Titre>Oeuf sur le plat</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite/>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes/>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+		<Recette ID="D">
+			<Titre>Frites</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite/>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes/>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+		<Recette ID="E">
+			<Titre>Salade verte</Titre>
 			<Resume></Resume>
 			<Photo></Photo>
 			<Date></Date>
@@ -73,8 +108,42 @@
 			<TpsRepos></TpsRepos>
 			<Desc></Desc>
 		</Recette>
-		<Recette ID="D">
-			<Titre></Titre>
+		<Recette ID="F">
+			<Titre>Gratin de courgettes</Titre>
+			<Resume></Resume>
+			<Photo></Photo>
+			<Date></Date>
+			<Difficulte></Difficulte>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite></Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes></NbPersonnes>
+			<TpsPreparation></TpsPreparation>
+			<TpsCuisson></TpsCuisson>
+			<TpsRepos></TpsRepos>
+			<Desc></Desc>
+		</Recette>
+		<Recette ID="G">
+			<Titre>Oeuf à cheval avec sa ribembelle d'herbe</Titre>
+			<Resume></Resume>
+			<Photo></Photo>
+			<Date></Date>
+			<Difficulte></Difficulte>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite></Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes></NbPersonnes>
+			<TpsPreparation></TpsPreparation>
+			<TpsCuisson></TpsCuisson>
+			<TpsRepos></TpsRepos>
+			<Desc></Desc>
+		</Recette>
+		<Recette ID="H">
+			<Titre>Pomme au four</Titre>
 			<Resume></Resume>
 			<Photo></Photo>
 			<Date></Date>
@@ -101,28 +170,60 @@
 			<ref-recette ref="A"/>
 		</Auteur>
 		<Auteur IDAuteur="Julian">
-			<Nom></Nom>
-			<Age></Age>
-			<Pays></Pays>
-			<Sexe></Sexe>
-			<Bio></Bio>
+			<Nom>Hurst</Nom>
+			<Age>21</Age>
+			<Pays>France</Pays>
+			<Sexe>M</Sexe>
+			<Bio>blablablablablablablablablablbalablablablablablablabla</Bio>
 			<ref-recette ref="B"/>
-		</Auteur>	
+		</Auteur>
 		<Auteur IDAuteur="Machin">
-			<Nom></Nom>
-			<Age></Age>
-			<Pays></Pays>
-			<Sexe></Sexe>
-			<Bio></Bio>
-			<ref-recette ref="C"></ref-recette>
+			<Nom>Hurst</Nom>
+			<Age>21</Age>
+			<Pays>France</Pays>
+			<Sexe>M</Sexe>
+			<Bio>blablablablablablablablablablbalablablablablablablabla</Bio>
+			<ref-recette ref="C"/>
 		</Auteur>
 		<Auteur IDAuteur="Truc">
-			<Nom></Nom>
-			<Age></Age>
-			<Pays></Pays>
-			<Sexe></Sexe>
+			<Nom>Hurst</Nom>
+			<Age>21</Age>
+			<Pays>France</Pays>
+			<Sexe>M</Sexe>
+			<Bio>blablablablablablablablablablbalablablablablablablabla</Bio>
+			<ref-recette ref="D"/>
+		</Auteur>
+		<Auteur IDAuteur="Dante">
+			<Nom>Alig</Nom>
+			<Age>666</Age>
+			<Pays>Italie</Pays>
+			<Sexe>Chaise</Sexe>
+			<Bio>Ecrivain</Bio>
+			<ref-recette ref="E"></ref-recette>
+		</Auteur>
+		<Auteur IDAuteur="Pomme_Smith">
+			<Nom>Granny</Nom>
+			<Age>50</Age>
+			<Pays>Djibouti</Pays>
+			<Sexe>Fruit</Sexe>
 			<Bio></Bio>
-			<ref-recette ref="D"></ref-recette>
+			<ref-recette ref="F"></ref-recette>
+		</Auteur>
+		<Auteur IDAuteur="Lodo">
+			<Nom>Uretra</Nom>
+			<Age>98</Age>
+			<Pays>Corse</Pays>
+			<Sexe>F</Sexe>
+			<Bio>Spécialiste Prolog</Bio>
+			<ref-recette ref="G"></ref-recette>
+		</Auteur>
+		<Auteur IDAuteur="Luigi">
+			<Nom>Santocanale</Nom>
+			<Age>43</Age>
+			<Pays>Italie</Pays>
+			<Sexe>Haskell</Sexe>
+			<Bio>Professeur</Bio>
+			<ref-recette ref="H"></ref-recette>
 		</Auteur>
 	</ListeAuteur>
 	<Categories desc="Categories de plats">
@@ -131,17 +232,17 @@
 				<Recettes ref="A"/>
 			</SousCategory>
 			<SousCategory nom="Entrées Froides" desc="">
-				<Recettes ref="B"></Recettes>
+				<Recettes ref="B"/>
 			</SousCategory>
 		</Category>
 		<Category nom="Plat" desc="">
 			<SousCategory nom="Viande" desc="">
-				<Recettes ref="C"></Recettes>
+				<Recettes ref="C"/>
 			</SousCategory>
 			<SousCategory nom="Poisson" desc="">
-				<Recettes ref="D"></Recettes>
+				<Recettes ref="D"/>
 			</SousCategory>
-		</Category>		
+		</Category>
 	</Categories>
 	<ListeIngredient>
 		<Ingredient IDIngredient="Pomme">
