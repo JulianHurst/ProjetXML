@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
 <?xml-stylesheet type="text/xsl" href="file:///C:/Users/h12026079/Desktop/ProjetXML-master/Cuisine.xsl"?>
-<Cuisines>
+<Cuisines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/h12026079/Desktop/Cuisine.xsd">
 	<ListeRecette>
 		<Recette ID="A">
 			<Titre>Verrine au muesli, pommes et fromage blanc</Titre>
@@ -50,8 +50,11 @@
 				<Ingredients>
 					<Quantite>20</Quantite>
 				</Ingredients>
+				<Ingredients>
+					<Quantite>25</Quantite>
+				</Ingredients>
 			</ListeIngredients>
-			<NbPersonnes/>
+			<NbPersonnes>4</NbPersonnes>
 			<TpsPreparation/>
 			<TpsCuisson/>
 			<TpsRepos/>
@@ -65,10 +68,13 @@
 			<Difficulte/>
 			<ListeIngredients>
 				<Ingredients>
-					<Quantite/>
+					<Quantite>20</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>25</Quantite>
 				</Ingredients>
 			</ListeIngredients>
-			<NbPersonnes/>
+			<NbPersonnes>5</NbPersonnes>
 			<TpsPreparation/>
 			<TpsCuisson/>
 			<TpsRepos/>
@@ -82,10 +88,13 @@
 			<Difficulte/>
 			<ListeIngredients>
 				<Ingredients>
-					<Quantite/>
+					<Quantite>8</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>10</Quantite>
 				</Ingredients>
 			</ListeIngredients>
-			<NbPersonnes/>
+			<NbPersonnes>2</NbPersonnes>
 			<TpsPreparation/>
 			<TpsCuisson/>
 			<TpsRepos/>
@@ -93,71 +102,83 @@
 		</Recette>
 		<Recette ID="E">
 			<Titre>Salade verte</Titre>
-			<Resume></Resume>
-			<Photo></Photo>
-			<Date></Date>
-			<Difficulte></Difficulte>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
 			<ListeIngredients>
 				<Ingredients>
-					<Quantite></Quantite>
+					<Quantite>40</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>65</Quantite>
 				</Ingredients>
 			</ListeIngredients>
-			<NbPersonnes></NbPersonnes>
-			<TpsPreparation></TpsPreparation>
-			<TpsCuisson></TpsCuisson>
-			<TpsRepos></TpsRepos>
-			<Desc></Desc>
+			<NbPersonnes>9</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
 		</Recette>
 		<Recette ID="F">
 			<Titre>Gratin de courgettes</Titre>
-			<Resume></Resume>
-			<Photo></Photo>
-			<Date></Date>
-			<Difficulte></Difficulte>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
 			<ListeIngredients>
 				<Ingredients>
-					<Quantite></Quantite>
+					<Quantite>100</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>23</Quantite>
 				</Ingredients>
 			</ListeIngredients>
-			<NbPersonnes></NbPersonnes>
-			<TpsPreparation></TpsPreparation>
-			<TpsCuisson></TpsCuisson>
-			<TpsRepos></TpsRepos>
-			<Desc></Desc>
+			<NbPersonnes>3</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
 		</Recette>
 		<Recette ID="G">
 			<Titre>Oeuf à cheval avec sa ribembelle d'herbe</Titre>
-			<Resume></Resume>
-			<Photo></Photo>
-			<Date></Date>
-			<Difficulte></Difficulte>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
 			<ListeIngredients>
 				<Ingredients>
-					<Quantite></Quantite>
+					<Quantite>55</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>22</Quantite>
 				</Ingredients>
 			</ListeIngredients>
-			<NbPersonnes></NbPersonnes>
-			<TpsPreparation></TpsPreparation>
-			<TpsCuisson></TpsCuisson>
-			<TpsRepos></TpsRepos>
-			<Desc></Desc>
+			<NbPersonnes>6</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
 		</Recette>
 		<Recette ID="H">
 			<Titre>Pomme au four</Titre>
-			<Resume></Resume>
-			<Photo></Photo>
-			<Date></Date>
-			<Difficulte></Difficulte>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
 			<ListeIngredients>
 				<Ingredients>
-					<Quantite></Quantite>
+					<Quantite>80</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>15</Quantite>
 				</Ingredients>
 			</ListeIngredients>
-			<NbPersonnes></NbPersonnes>
-			<TpsPreparation></TpsPreparation>
-			<TpsCuisson></TpsCuisson>
-			<TpsRepos></TpsRepos>
-			<Desc></Desc>
+			<NbPersonnes>3</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
 		</Recette>
 	</ListeRecette>
 	<ListeAuteur>
@@ -199,15 +220,15 @@
 			<Pays>Italie</Pays>
 			<Sexe>Chaise</Sexe>
 			<Bio>Ecrivain</Bio>
-			<ref-recette ref="E"></ref-recette>
+			<ref-recette ref="E"/>
 		</Auteur>
 		<Auteur IDAuteur="Pomme_Smith">
 			<Nom>Granny</Nom>
 			<Age>50</Age>
 			<Pays>Djibouti</Pays>
 			<Sexe>Fruit</Sexe>
-			<Bio></Bio>
-			<ref-recette ref="F"></ref-recette>
+			<Bio/>
+			<ref-recette ref="F"/>
 		</Auteur>
 		<Auteur IDAuteur="Lodo">
 			<Nom>Uretra</Nom>
@@ -215,7 +236,7 @@
 			<Pays>Corse</Pays>
 			<Sexe>F</Sexe>
 			<Bio>Spécialiste Prolog</Bio>
-			<ref-recette ref="G"></ref-recette>
+			<ref-recette ref="G"/>
 		</Auteur>
 		<Auteur IDAuteur="Luigi">
 			<Nom>Santocanale</Nom>
@@ -223,7 +244,7 @@
 			<Pays>Italie</Pays>
 			<Sexe>Haskell</Sexe>
 			<Bio>Professeur</Bio>
-			<ref-recette ref="H"></ref-recette>
+			<ref-recette ref="H"/>
 		</Auteur>
 	</ListeAuteur>
 	<Categories desc="Categories de plats">

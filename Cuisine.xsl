@@ -3,6 +3,70 @@
 <xsl:output method="xhtml" indent="yes" encoding="iso-8859-1"/>
 
 <xsl:template match="/">
+<xsl:result-document href="index.html">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<h1>Bienvenue au site de recettes xhtml</h1>
+	<div>
+		<a href="recettes.html">Recettes</a><br/>
+		<a href="ingredients.html">Ingredients</a><br/>
+		<a href="auteurs.html">Auteurs</a><br/>	
+	</div>
+	</body>
+</html>
+</xsl:result-document>
+<xsl:result-document href="recettes.html">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<div>
+		<a href="ingredients.html">Ingredients</a><br/>
+		<a href="auteurs.html">Auteurs</a><br/>	
+	</div>
+	<xsl:call-template name="indexR"/>
+	<h1 style="text-decoration: underline;">Recettes:</h1>
+	<xsl:call-template name="liste-des-recettes"/>
+	</body>
+</html>
+</xsl:result-document>
+<xsl:result-document href="ingredients.html">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<div>
+	<a href="recettes.html">Recettes</a><br/>
+	<a href="auteurs.html">Auteurs</a><br/>
+	</div>
+	<xsl:call-template name="indexI"/>
+	<h1 style="text-decoration: underline;">Ingredients:</h1>
+	<xsl:call-template name="ing"/>	
+	</body>
+</html>
+</xsl:result-document>
+<xsl:result-document href="auteurs.html">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<div>
+		<a href="recettes.html">Recettes</a><br/>
+		<a href="ingredients.html">Ingredients</a><br/>
+	</div>
+	<xsl:call-template name="indexA"/>
+	<h1 style="text-decoration: underline;">Auteurs:</h1>
+	<xsl:call-template name="auteurs"/>
+	</body>
+</html>
+</xsl:result-document>
+<!--
 <html>
 	<head>
 		<title></title>
@@ -18,7 +82,7 @@
 		<h1 style="text-decoration: underline;">Auteurs:</h1>
 		<xsl:call-template name="auteurs"/>
 	</body>
-</html>
+</html>-->
 </xsl:template>
 
 <xsl:template name="liste-des-recettes">
@@ -29,7 +93,10 @@
 		<xsl:value-of select="Photo"/><br/>
 		<xsl:value-of select="Date"/><br/>
 		<xsl:value-of select="Difficulte"/><br/>
-		<xsl:value-of select="ListeIngredients"/><br/>
+		<!--<xsl:value-of select="ListeIngredients"/><br/>-->
+		<xsl:for-each select="/ListeIngredients">
+			<xsl:value-of select="Ingredients"/><br/>
+		</xsl:for-each>
 		<xsl:value-of select="NbPersonnes"/><br/>
 		<xsl:value-of select="TpsPreparation"/><br/>
 		<xsl:value-of select="TpsCuisson"/><br/>
@@ -44,7 +111,7 @@
 	<xsl:for-each select="//Auteur">
 		<h2 id="{generate-id(@IDAuteur)}"><xsl:value-of select="@IDAuteur"/></h2>
 		<div>
-		<xsl:value-of select="."/>					
+		<xsl:value-of select="*"/>					
 		</div>		
 	</xsl:for-each>	
 </xsl:template>

@@ -45,10 +45,10 @@
 <!ATTLIST Auteur IDAuteur ID #REQUIRED>
 <!ATTLIST ref-recette ref IDREF #REQUIRED>
 <!ATTLIST Category nom CDATA #REQUIRED>
-<!ATTLIST Categories desc CDATA #REQUIRED>
+<!ATTLIST Categories desc CDATA #IMPLIED>
 <!ATTLIST Category nom CDATA #REQUIRED>
-<!ATTLIST Category desc CDATA #REQUIRED>
+<!ATTLIST Category desc CDATA #IMPLIED>
 <!ATTLIST SousCategory nom CDATA #REQUIRED>
-<!ATTLIST SousCategory desc CDATA #REQUIRED>
+<!ATTLIST SousCategory desc CDATA #IMPLIED>
 <!ATTLIST Recettes ref IDREF #REQUIRED>
 <!ATTLIST Ingredient IDIngredient ID #REQUIRED>
