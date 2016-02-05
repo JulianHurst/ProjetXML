@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
-<?xml-stylesheet type="text/xsl" href="file:///C:/Users/h12026079/Desktop/ProjetXML-master/Cuisine.xsl"?>
-<Cuisines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/h12026079/Desktop/Cuisine.xsd">
+<?xml-stylesheet type="text/xsl" href="file:///Cuisine.xsl"?>
+<Cuisines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Cuisine.xsd">
 	<ListeRecette>
 		<Recette ID="A">
 			<Titre>Verrine au muesli, pommes et fromage blanc</Titre>

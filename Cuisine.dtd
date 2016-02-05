@@ -46,7 +46,6 @@
 <!ATTLIST ref-recette ref IDREF #REQUIRED>
 <!ATTLIST Category nom CDATA #REQUIRED>
 <!ATTLIST Categories desc CDATA #IMPLIED>
-<!ATTLIST Category nom CDATA #REQUIRED>
 <!ATTLIST Category desc CDATA #IMPLIED>
 <!ATTLIST SousCategory nom CDATA #REQUIRED>
 <!ATTLIST SousCategory desc CDATA #IMPLIED>

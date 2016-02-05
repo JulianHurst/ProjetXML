@@ -74,9 +74,9 @@
 	</head>
 	<body>
 	<div id="links">
-		<a href="recettes.html">Recettes</a><br/>
-		<a href="ingredients.html">Ingredients</a><br/>
-		<a href="auteurs.html">Auteurs</a><br/>	
+        <a href="../recettes.html">Recettes</a><br/>
+        <a href="../ingredients.html">Ingredients</a><br/>
+        <a href="../auteurs.html">Auteurs</a><br/>
 	</div>
 	<div>
 		<h2 id="{generate-id(@ID)}"><xsl:value-of select="Titre"/></h2>		
@@ -107,9 +107,9 @@
 	</head>
 	<body>
 	<div id="links">
-		<a href="recettes.html">Recettes</a><br/>
-		<a href="ingredients.html">Ingredients</a><br/>
-		<a href="auteurs.html">Auteurs</a><br/>	
+        <a href="../recettes.html">Recettes</a><br/>
+		<a href="../ingredients.html">Ingredients</a><br/>
+		<a href="../auteurs.html">Auteurs</a><br/>
 	</div>
 	<div>
 		<h2 id="{generate-id(@IDAuteur)}"><xsl:value-of select="@IDAuteur"/></h2>
@@ -128,9 +128,9 @@
 	</head>
 	<body>
 	<div id="links">
-		<a href="recettes.html">Recettes</a><br/>
-		<a href="ingredients.html">Ingredients</a><br/>
-		<a href="auteurs.html">Auteurs</a><br/>	
+        <a href="../recettes.html">Recettes</a><br/>
+		<a href="../ingredients.html">Ingredients</a><br/>
+		<a href="../auteurs.html">Auteurs</a><br/>
 	</div>
 	<div>
 		<h2 id="{generate-id(@IDIngredient)}"><xsl:value-of select="Nom"/></h2>
