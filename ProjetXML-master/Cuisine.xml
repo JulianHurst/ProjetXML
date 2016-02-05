@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/h12026079/Desktop/ProjetXML-master/Cuisine.xsl"?>
+<Cuisines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/h12026079/Desktop/Cuisine.xsd">
+	<ListeRecette>
+		<Recette ID="A">
+			<Titre>Verrine au muesli, pommes et fromage blanc</Titre>
+			<Resume>Une verrine</Resume>
+			<Photo>http://www.odelices.com/images/recettes/verrine_muesli_fromage_blanc_pommes_spiruline-360x380.jpg</Photo>
+			<Date>21-01-2016</Date>
+			<Difficulte>Façile</Difficulte>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>80</Quantite>
+					<Unite>g</Unite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>400</Quantite>
+					<Unite>g</Unite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>40</Quantite>
+					<Unite>g</Unite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>1</Quantite>
+					<Unite>cuillerée</Unite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>2</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>1</Quantite>
+					<Unite>poignée</Unite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>4</NbPersonnes>
+			<TpsPreparation>10 min</TpsPreparation>
+			<TpsCuisson>-</TpsCuisson>
+			<TpsRepos>-</TpsRepos>
+			<Desc>Une verrine</Desc>
+		</Recette>
+		<Recette ID="B">
+			<Titre>Pâtes au beurre</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>20</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>25</Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>4</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+		<Recette ID="C">
+			<Titre>Oeuf sur le plat</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>20</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>25</Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>5</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+		<Recette ID="D">
+			<Titre>Frites</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>8</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>10</Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>2</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+		<Recette ID="E">
+			<Titre>Salade verte</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>40</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>65</Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>9</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+		<Recette ID="F">
+			<Titre>Gratin de courgettes</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>100</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>23</Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>3</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+		<Recette ID="G">
+			<Titre>Oeuf à cheval avec sa ribembelle d'herbe</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>55</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>22</Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>6</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+		<Recette ID="H">
+			<Titre>Pomme au four</Titre>
+			<Resume/>
+			<Photo/>
+			<Date/>
+			<Difficulte/>
+			<ListeIngredients>
+				<Ingredients>
+					<Quantite>80</Quantite>
+				</Ingredients>
+				<Ingredients>
+					<Quantite>15</Quantite>
+				</Ingredients>
+			</ListeIngredients>
+			<NbPersonnes>3</NbPersonnes>
+			<TpsPreparation/>
+			<TpsCuisson/>
+			<TpsRepos/>
+			<Desc/>
+		</Recette>
+	</ListeRecette>
+	<ListeAuteur>
+		<Auteur IDAuteur="Kevin">
+			<Nom>Gare à Bedian</Nom>
+			<Age>25</Age>
+			<Pays>France</Pays>
+			<Sexe>Hermaphrodite</Sexe>
+			<Bio>Biodégradable</Bio>
+			<ref-recette ref="A"/>
+		</Auteur>
+		<Auteur IDAuteur="Julian">
+			<Nom>Hurst</Nom>
+			<Age>21</Age>
+			<Pays>France</Pays>
+			<Sexe>M</Sexe>
+			<Bio>blablablablablablablablablablbalablablablablablablabla</Bio>
+			<ref-recette ref="B"/>
+		</Auteur>
+		<Auteur IDAuteur="Machin">
+			<Nom>Hurst</Nom>
+			<Age>21</Age>
+			<Pays>France</Pays>
+			<Sexe>M</Sexe>
+			<Bio>blablablablablablablablablablbalablablablablablablabla</Bio>
+			<ref-recette ref="C"/>
+		</Auteur>
+		<Auteur IDAuteur="Truc">
+			<Nom>Hurst</Nom>
+			<Age>21</Age>
+			<Pays>France</Pays>
+			<Sexe>M</Sexe>
+			<Bio>blablablablablablablablablablbalablablablablablablabla</Bio>
+			<ref-recette ref="D"/>
+		</Auteur>
+		<Auteur IDAuteur="Dante">
+			<Nom>Alig</Nom>
+			<Age>666</Age>
+			<Pays>Italie</Pays>
+			<Sexe>Chaise</Sexe>
+			<Bio>Ecrivain</Bio>
+			<ref-recette ref="E"/>
+		</Auteur>
+		<Auteur IDAuteur="Pomme_Smith">
+			<Nom>Granny</Nom>
+			<Age>50</Age>
+			<Pays>Djibouti</Pays>
+			<Sexe>Fruit</Sexe>
+			<Bio/>
+			<ref-recette ref="F"/>
+		</Auteur>
+		<Auteur IDAuteur="Lodo">
+			<Nom>Uretra</Nom>
+			<Age>98</Age>
+			<Pays>Corse</Pays>
+			<Sexe>F</Sexe>
+			<Bio>Spécialiste Prolog</Bio>
+			<ref-recette ref="G"/>
+		</Auteur>
+		<Auteur IDAuteur="Luigi">
+			<Nom>Santocanale</Nom>
+			<Age>43</Age>
+			<Pays>Italie</Pays>
+			<Sexe>Haskell</Sexe>
+			<Bio>Professeur</Bio>
+			<ref-recette ref="H"/>
+		</Auteur>
+	</ListeAuteur>
+	<Categories desc="Categories de plats">
+		<Category nom="Entrée" desc="">
+			<SousCategory nom="Entrées Chaudes" desc="">
+				<Recettes ref="A"/>
+			</SousCategory>
+			<SousCategory nom="Entrées Froides" desc="">
+				<Recettes ref="B"/>
+			</SousCategory>
+		</Category>
+		<Category nom="Plat" desc="">
+			<SousCategory nom="Viande" desc="">
+				<Recettes ref="C"/>
+			</SousCategory>
+			<SousCategory nom="Poisson" desc="">
+				<Recettes ref="D"/>
+			</SousCategory>
+		</Category>
+	</Categories>
+	<ListeIngredient>
+		<Ingredient IDIngredient="Pomme">
+			<Nom>Pomme</Nom>
+		</Ingredient>
+	</ListeIngredient>
+</Cuisines>
