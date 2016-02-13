@@ -67,7 +67,8 @@ public class Marie {
 			DocumentBuilderFactory fac=DocumentBuilderFactory.newInstance();
 			DocumentBuilder db=fac.newDocumentBuilder();
 			Document doc = db.parse("Cuisine.xml");
-			TransformerFactory facto = TransformerFactory.newInstance();
+			//TransformerFactory facto = TransformerFactory.newInstance();
+			TransformerFactory facto = new net.sf.saxon.TransformerFactoryImpl();
 			Transformer t=facto.newTransformer(new StreamSource("Cuisine.xsl"));
 			t.transform(new DOMSource(doc), new StreamResult("C:/Users/h12026079/Desktop/Cuisine.html"));
 		}
