@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Cuisines (ListeRecette,ListeAuteur,Categories,ListeIngredient)>
+<!ELEMENT ListeRecette (Recette+)>
+<!ELEMENT Recette (Titre,Resume,Photo,Date,Difficulte,ListeIngredients,NbPersonnes,TpsPreparation,TpsCuisson,TpsRepos,Desc,Note?)>
+<!ELEMENT Titre (#PCDATA)>
+<!ELEMENT Resume (#PCDATA)>
+<!ELEMENT Photo (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Difficulte (#PCDATA)>
+<!ELEMENT NbPersonnes (#PCDATA)>
+<!ELEMENT TpsPreparation (#PCDATA)>
+<!ELEMENT TpsCuisson (#PCDATA)>
+<!ELEMENT TpsRepos (#PCDATA)>
+<!ELEMENT Desc (#PCDATA)>
+<!ELEMENT Note (#PCDATA)>
+<!ELEMENT ListeIngredients (Ingredients+)>
+<!ELEMENT Ingredients (Quantite,Unite?)>
+<!ELEMENT Quantite (#PCDATA)>
+<!ELEMENT Unite (#PCDATA)>
+
+
+<!ELEMENT ListeIngredient (Ingredient+)>
+<!ELEMENT Ingredient (Nom,ApportNut?,ApportEn?,Saison?,Descriptif?)>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT ApportNut (#PCDATA)>
+<!ELEMENT ApportEn (#PCDATA)>
+<!ELEMENT Saison (#PCDATA)>
+<!ELEMENT Descriptif (#PCDATA)>
+
+<!ELEMENT ListeAuteur (Auteur+)>
+<!ELEMENT Auteur (Nom,Age,Pays,Sexe,Bio,ref-recette)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT Pays (#PCDATA)>
+<!ELEMENT Sexe (#PCDATA)>
+<!ELEMENT Bio (#PCDATA)>
+<!ELEMENT ref-recette EMPTY>
+
+<!ELEMENT Categories (Category+)>
+<!ELEMENT Category (SousCategory+)>
+<!ELEMENT SousCategory (Recettes+)>
+<!ELEMENT Recettes EMPTY>
+
+
+<!ATTLIST Recette ID ID #REQUIRED>
+<!ATTLIST Auteur IDAuteur ID #REQUIRED>
+<!ATTLIST ref-recette ref IDREF #REQUIRED>
+<!ATTLIST Category nom CDATA #REQUIRED>
+<!ATTLIST Categories desc CDATA #IMPLIED>
+<!ATTLIST Category desc CDATA #IMPLIED>
+<!ATTLIST SousCategory nom CDATA #REQUIRED>
+<!ATTLIST SousCategory desc CDATA #IMPLIED>
+<!ATTLIST Recettes ref IDREF #REQUIRED>
+<!ATTLIST Ingredient IDIngredient ID #REQUIRED>
