@@ -7,30 +7,30 @@
 		<Recette ID="A">
 			<Titre>Verrine au muesli</Titre>
 			<Resume>Une verrine</Resume>
-			<Photo>http://www.odelices.com/images/recettes/verrine_muesli_fromage_blanc_pommes_spiruline-360x380.jpg</Photo>
+			<Photo>images/verrine_muesli_fromage_blanc_pommes_spiruline-360x380.jpg</Photo>
 			<Date>21-01-2016</Date>
 			<Difficulte>Façile</Difficulte>
 			<ListeIngredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Muesli">
 					<Quantite>80</Quantite>
 					<Unite>g</Unite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Fromage_Blanc">
 					<Quantite>400</Quantite>
 					<Unite>g</Unite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Sucre">
 					<Quantite>40</Quantite>
 					<Unite>g</Unite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Spiruline">
 					<Quantite>1</Quantite>
 					<Unite>cuillerée</Unite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>2</Quantite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pistaches">
 					<Quantite>1</Quantite>
 					<Unite>poignée</Unite>
 				</Ingredients>
@@ -42,16 +42,16 @@
 			<Desc>Une verrine</Desc>
 		</Recette>
 		<Recette ID="B">
-			<Titre>Pâtes au beurre</Titre>
+			<Titre>Lotte aux poires</Titre>
 			<Resume/>
-			<Photo/>
-			<Date/>
-			<Difficulte/>
+			<Photo>images/lotte_au_poire-360x380.jpg</Photo>
+			<Date>14-02-2016</Date>
+			<Difficulte>Facile</Difficulte>
 			<ListeIngredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>20</Quantite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>25</Quantite>
 				</Ingredients>
 			</ListeIngredients>
@@ -62,16 +62,16 @@
 			<Desc/>
 		</Recette>
 		<Recette ID="C">
-			<Titre>Oeuf sur le plat</Titre>
+			<Titre>Pizza à la napolitaine</Titre>
 			<Resume/>
-			<Photo/>
+			<Photo>images/pizzanap.jpg</Photo>
 			<Date/>
 			<Difficulte/>
 			<ListeIngredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>20</Quantite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>25</Quantite>
 				</Ingredients>
 			</ListeIngredients>
@@ -82,16 +82,16 @@
 			<Desc/>
 		</Recette>
 		<Recette ID="D">
-			<Titre>Frites</Titre>
+			<Titre>Baeckeoffe alsacien</Titre>
 			<Resume/>
-			<Photo/>
+			<Photo>images/baeckeoffe_alsacien-360x380.jpg</Photo>
 			<Date/>
 			<Difficulte/>
 			<ListeIngredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>8</Quantite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>10</Quantite>
 				</Ingredients>
 			</ListeIngredients>
@@ -102,16 +102,16 @@
 			<Desc/>
 		</Recette>
 		<Recette ID="E">
-			<Titre>Salade verte</Titre>
+			<Titre>Lapin à la moutarde</Titre>
 			<Resume/>
-			<Photo/>
+			<Photo>images/lapin-a-la-moutarde.jpg</Photo>
 			<Date/>
 			<Difficulte/>
 			<ListeIngredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>40</Quantite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>65</Quantite>
 				</Ingredients>
 			</ListeIngredients>
@@ -122,16 +122,16 @@
 			<Desc/>
 		</Recette>
 		<Recette ID="F">
-			<Titre>Gratin de courgettes</Titre>
+			<Titre>Gratin de courgettes au munster</Titre>
 			<Resume/>
-			<Photo/>
+			<Photo>images/gratin-de-courgettes-au-munster.jpg</Photo>
 			<Date/>
 			<Difficulte/>
 			<ListeIngredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>100</Quantite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>23</Quantite>
 				</Ingredients>
 			</ListeIngredients>
@@ -142,16 +142,16 @@
 			<Desc/>
 		</Recette>
 		<Recette ID="G">
-			<Titre>Oeuf à cheval avec sa ribembelle d'herbe</Titre>
+			<Titre>Saumon teriyaki</Titre>
 			<Resume/>
-			<Photo/>
+			<Photo>images/saumon-teriyaki.jpg</Photo>
 			<Date/>
 			<Difficulte/>
 			<ListeIngredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>55</Quantite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>22</Quantite>
 				</Ingredients>
 			</ListeIngredients>
@@ -162,16 +162,16 @@
 			<Desc/>
 		</Recette>
 		<Recette ID="H">
-			<Titre>Pomme au four</Titre>
+			<Titre>Cheesecake au citron</Titre>
 			<Resume/>
-			<Photo/>
+			<Photo>images/cheesecake-au-citron.jpg</Photo>
 			<Date/>
 			<Difficulte/>
 			<ListeIngredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>80</Quantite>
 				</Ingredients>
-				<Ingredients>
+				<Ingredients IDIngredientRef="Pomme">
 					<Quantite>15</Quantite>
 				</Ingredients>
 			</ListeIngredients>
@@ -268,7 +268,22 @@
 	</Categories>
 	<ListeIngredient>
 		<Ingredient IDIngredient="Pomme">
-			<Nom>Pomme</Nom>
+			<Nom>Pommes</Nom>
 		</Ingredient>
+    <Ingredient IDIngredient="Muesli">
+    	<Nom>Muesli croustillant aux pommes</Nom>
+    </Ingredient>
+    <Ingredient IDIngredient="Fromage_Blanc">
+      <Nom>Fromage Blanc</Nom>
+    </Ingredient>
+    <Ingredient IDIngredient="Sucre">
+      <Nom>Sucre</Nom>
+    </Ingredient>
+    <Ingredient IDIngredient="Spiruline">
+      <Nom>Spiruline en poudre</Nom>
+    </Ingredient>
+    <Ingredient IDIngredient="Pistaches">
+      <Nom>Pistaches concassées</Nom>
+    </Ingredient>
 	</ListeIngredient>
 </Cuisines>

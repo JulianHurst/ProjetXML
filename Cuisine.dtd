@@ -51,3 +51,4 @@
 <!ATTLIST SousCategory desc CDATA #IMPLIED>
 <!ATTLIST Recettes ref IDREF #REQUIRED>
 <!ATTLIST Ingredient IDIngredient ID #REQUIRED>
+<!ATTLIST Ingredients IDIngredientRef IDREF #REQUIRED>
