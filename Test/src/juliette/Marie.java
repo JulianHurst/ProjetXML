@@ -26,10 +26,10 @@ public class Marie {
 			parcours(N);
 			createweb();
 		}
-		
+
 		static void parcours(NodeList N){
 			for(int i=0;i<N.getLength();i++){
-				Node n=N.item(i);				
+				Node n=N.item(i);
 				NodeList children=n.getChildNodes();
 				for(int j=0;j<children.getLength();j++){
 					Node c=children.item(j);
@@ -38,23 +38,23 @@ public class Marie {
 				}
 			}
 		}
-		
+
 		static void createRecettes(NodeList N) throws Throwable{
 			Document doc= DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-			Element root = doc.createElement("Recettes");			
-			
+			Element root = doc.createElement("Recettes");
+
 			for(int i=0;i<N.getLength();i++){
-				Node n=N.item(i);				
+				Node n=N.item(i);
 				NodeList children=n.getChildNodes();
 				for(int j=0;j<children.getLength();j++){
 					Node c=children.item(j);
 					if(c.getNodeName().equals("Titre")){
 						Element T = doc.createElement("Titre");
 						T.appendChild(doc.createTextNode(c.getTextContent()));
-						root.appendChild(T);												
+						root.appendChild(T);
 					}
 				}
-			}					
+			}
 			doc.appendChild(root);
 			TransformerFactory fac = TransformerFactory.newInstance();
 			Transformer transformer = fac.newTransformer();
@@ -62,7 +62,7 @@ public class Marie {
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.transform(new DOMSource(doc), new StreamResult(System.out));
 		}
-		
+
 		static void createweb() throws Throwable{
 			DocumentBuilderFactory fac=DocumentBuilderFactory.newInstance();
 			DocumentBuilder db=fac.newDocumentBuilder();
@@ -70,6 +70,6 @@ public class Marie {
 			//TransformerFactory facto = TransformerFactory.newInstance();
 			TransformerFactory facto = new net.sf.saxon.TransformerFactoryImpl();
 			Transformer t=facto.newTransformer(new StreamSource("Cuisine.xsl"));
-			t.transform(new DOMSource(doc), new StreamResult("C:/Users/h12026079/Desktop/Cuisine.html"));
+			t.transform(new DOMSource(doc), new StreamResult());
 		}
 }

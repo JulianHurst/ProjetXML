@@ -91,19 +91,24 @@
 	</div>
 	<div>
 		<h2 id="{generate-id(@ID)}"><xsl:value-of select="Titre"/></h2>
+    <img alt="{Titre}" src="../../{Photo}"/><br/>
+    <br/>
+    Resume : <br/>
 		<p><xsl:value-of select="Resume"/></p>
-		<img alt="{Titre}" src="{Photo}"/><br/>
-		<xsl:value-of select="Date"/><br/>
-		<xsl:value-of select="Difficulte"/><br/>
-		<xsl:for-each select="/ListeIngredients">
-			<xsl:value-of select="Ingredients"/><br/>
-		</xsl:for-each>
-		<xsl:value-of select="NbPersonnes"/><br/>
-		<xsl:value-of select="TpsPreparation"/><br/>
-		<xsl:value-of select="TpsCuisson"/><br/>
-		<xsl:value-of select="TpsRepos"/><br/>
-		<xsl:value-of select="Desc"/><br/>
-		<xsl:value-of select="Note"/>
+    Date : <xsl:value-of select="Date"/><br/>
+		Difficulté : <xsl:value-of select="Difficulte"/><br/>
+    <br/>
+		Ingredients :<br/>
+    <xsl:for-each select="ListeIngredients/Ingredients">
+      -<xsl:value-of select="id(@IDIngredientRef)/Nom"/> : <xsl:value-of select="."/><br/>
+    </xsl:for-each>
+    <br/>
+		Nombre de personnes : <xsl:value-of select="NbPersonnes"/><br/>
+		Temps de Préparation : <xsl:value-of select="TpsPreparation"/><br/>
+		Temps de Cuisson : <xsl:value-of select="TpsCuisson"/><br/>
+		Temps de Repos : <xsl:value-of select="TpsRepos"/><br/>
+		Description : <xsl:value-of select="Desc"/><br/>
+		Note : <xsl:value-of select="Note"/>
 	</div>
 	</body>
 </html>
@@ -180,19 +185,24 @@
 	<div>
 	<xsl:for-each select="//Recette">
 		<h2 id="{generate-id(@ID)}"><a href="Recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a></h2>
+    <img alt="{Titre}" src="../{Photo}"/><br/>
+    <br/>
+    Resume : <br/>
 		<p><xsl:value-of select="Resume"/></p>
-		<img alt="{Titre}" src="{Photo}"/><br/>
-		<xsl:value-of select="Date"/><br/>
-		<xsl:value-of select="Difficulte"/><br/>
-		<xsl:for-each select="/ListeIngredients">
-			<xsl:value-of select="Ingredients"/><br/>
-		</xsl:for-each>
-		<xsl:value-of select="NbPersonnes"/><br/>
-		<xsl:value-of select="TpsPreparation"/><br/>
-		<xsl:value-of select="TpsCuisson"/><br/>
-		<xsl:value-of select="TpsRepos"/><br/>
-		<xsl:value-of select="Desc"/><br/>
-		<xsl:value-of select="Note"/>
+		Date : <xsl:value-of select="Date"/><br/>
+		Difficulté : <xsl:value-of select="Difficulte"/><br/>
+    <br/>
+		Ingredients :<br/>
+    <xsl:for-each select="ListeIngredients/Ingredients">
+      -<xsl:value-of select="id(@IDIngredientRef)/Nom"/> : <xsl:value-of select="."/><br/>
+    </xsl:for-each>
+    <br/>
+		Nombre de personnes : <xsl:value-of select="NbPersonnes"/><br/>
+		Temps de Préparation : <xsl:value-of select="TpsPreparation"/><br/>
+		Temps de Cuisson : <xsl:value-of select="TpsCuisson"/><br/>
+		Temps de Repos : <xsl:value-of select="TpsRepos"/><br/>
+		Description : <xsl:value-of select="Desc"/><br/>
+		Note : <xsl:value-of select="Note"/>
 	</xsl:for-each>
 	</div>
 </xsl:template>
