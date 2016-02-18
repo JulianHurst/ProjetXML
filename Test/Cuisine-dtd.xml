@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
- <?xml-stylesheet type="text/xsl" href="file:///C:/Users/h12026079/Desktop/ProjetXML-master/Cuisine.xsl"?> -->
+<!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
+<!-- <?xml-stylesheet type="text/xsl" href="file:///C:/Users/h12026079/Desktop/ProjetXML-master/Cuisine.xsl"?> -->
 <?xml-stylesheet type="text/xsl" href="Cuisine.xsl"?>
-<Cuisines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Cuisine.xsd">
+<Cuisines>
 	<ListeRecette>
 		<Recette ID="A">
 			<Titre>Verrine au muesli</Titre>
