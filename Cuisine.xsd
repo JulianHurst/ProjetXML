@@ -36,7 +36,7 @@
 				<xs:element ref="Desc"/>
 				<xs:element ref="Note" minOccurs="0"/>
 			</xs:sequence>
-			<xs:attribute name="ID" type="xs:string"/>
+			<xs:attribute name="ID" type="xs:ID"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="Titre">
@@ -80,7 +80,7 @@
 				<xs:element ref="Quantite"/>
 				<xs:element ref="Unite" minOccurs="0"/>
 			</xs:sequence>
-			<xs:attribute name="IDIngredientRef" use="required" type="xs:string"/>
+			<xs:attribute name="IDIngredientRef" use="required" type="xs:IDREF"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="Quantite">
@@ -141,7 +141,7 @@
 				<xs:element ref="ref-recette"/>
 				<xs:any minOccurs="0"/>
 			</xs:sequence>
-			<xs:attribute name="IDAuteur" type="xs:string"/>
+			<xs:attribute name="IDAuteur" type="xs:ID"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="Nom" type="xs:string"/>
@@ -151,7 +151,7 @@
 	<xs:element name="Bio" type="xs:string"/>
 	<xs:element name="ref-recette">
 		<xs:complexType>
-			<xs:attribute name="ref" use="required" type="xs:string"/>
+			<xs:attribute name="ref" use="required" type="xs:IDREF"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="Categories">
@@ -182,7 +182,7 @@
 	</xs:element>
 	<xs:element name="Recettes">
 		<xs:complexType>
-			<xs:attribute name="ref" use="required" type="xs:string"/>
+			<xs:attribute name="ref" use="required" type="xs:IDREF"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="ListeIngredient">
@@ -201,7 +201,7 @@
 				<xs:element ref="Saison" minOccurs="0"/>
 				<xs:element ref="Descriptif" minOccurs="0"/>
 			</xs:sequence>
-			<xs:attribute name="IDIngredient" use="required" type="xs:string"/>
+			<xs:attribute name="IDIngredient" use="required" type="xs:ID"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="ApportNut" type="xs:string"/>
