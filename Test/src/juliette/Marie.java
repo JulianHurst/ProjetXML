@@ -70,6 +70,7 @@ public class Marie {
 			//TransformerFactory facto = TransformerFactory.newInstance();
 			TransformerFactory facto = new net.sf.saxon.TransformerFactoryImpl();
 			Transformer t=facto.newTransformer(new StreamSource("Cuisine.xsl"));
-			t.transform(new DOMSource(doc), new StreamResult());
+			t.setOutputProperty(OutputKeys.INDENT, "yes");
+			t.transform(new DOMSource(doc), new StreamResult(System.out));
 		}
 }
