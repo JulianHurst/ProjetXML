@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:exsl="http://exslt.org/common"
                 extension-element-prefixes="exsl">
+<xsl:key name="ing" match="Ingredient" use="@IDIngredient"/>
 <xsl:output method="html" indent="yes" encoding="iso-8859-1"/>
 
 <xsl:template match="/">
@@ -100,7 +101,8 @@
     <br/>
 		Ingredients :<br/>
     <xsl:for-each select="ListeIngredients/Ingredients">
-      -<xsl:value-of select="id(@IDIngredientRef)/Nom"/> : <xsl:value-of select="."/><br/>
+      <!--<xsl:value-of select="id(@IDIngredientRef)/Nom"/> -->
+      - <xsl:value-of select="key('ing',@IDIngredientRef)"/> : <xsl:value-of select="."/><br/>
     </xsl:for-each>
     <br/>
 		Nombre de personnes : <xsl:value-of select="NbPersonnes"/><br/>
@@ -194,7 +196,8 @@
     <br/>
 		Ingredients :<br/>
     <xsl:for-each select="ListeIngredients/Ingredients">
-      -<xsl:value-of select="id(@IDIngredientRef)/Nom"/> : <xsl:value-of select="."/><br/>
+      <!--<xsl:value-of select="id(@IDIngredientRef)/Nom"/> -->
+     -<xsl:value-of select="key('ing',@IDIngredientRef)"/> : <xsl:value-of select="."/><br/>
     </xsl:for-each>
     <br/>
 		Nombre de personnes : <xsl:value-of select="NbPersonnes"/><br/>
