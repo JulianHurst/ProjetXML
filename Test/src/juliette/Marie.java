@@ -69,7 +69,7 @@ public class Marie {
 			Document doc = db.parse("Cuisine.xml");
 			//TransformerFactory facto = TransformerFactory.newInstance();
 			TransformerFactory facto = new net.sf.saxon.TransformerFactoryImpl();
-			Transformer t=facto.newTransformer(new StreamSource("Cuisine.xsl"));
+			Transformer t=facto.newTransformer(new StreamSource("Cuisinek.xsl"));
 			t.setOutputProperty(OutputKeys.INDENT, "yes");
 			t.transform(new DOMSource(doc), new StreamResult(System.out));
 		}
