@@ -1,7 +1,9 @@
 .ingTable{
 	width: 30%;
 }
-
-.lir{
-	line-height:1;
+.tableIng{
+	width: 50%;
+}
+.tdIng{
+	padding: 0;
 }
