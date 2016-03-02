@@ -14,6 +14,9 @@
 		<title></title>
 	</head>
 	<body>
+		<div class="header">
+			
+		</div>
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,6 +53,7 @@
 		<title></title>
 	</head>
 	<body>
+	
 		<div id="links">
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
@@ -76,34 +80,36 @@
 			  </div><!-- /.container-fluid -->
 			</nav>
 		</div>
-		<div class="ingTable">
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Image</th>
-						<th>Nom</th>
-						<th>Information</th>
-					</tr>
-				</thead>
-				<xsl:for-each select="//Recette">
-				<div class="ingTable">
-					<tbody>
+		<div class="ingCorp">
+			<div class="ingTable">
+				<table class="table">
+					<thead>
 						<tr>
-							<td><img src="{Photo}" alt="#" class="img-rounded" height="100px" width="100px"/></td>
-							<td><a href="./recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a></td>
-							<td>
-								<ul>
-									<li id="lir">Nombre de personne : <xsl:value-of select="NbPersonnes"/></li>
-									<li id="lir">Temps de préparation : <xsl:value-of select="TpsPreparation"/></li>
-									<li id="lir">Temps de cuisson : <xsl:value-of select="TpsCuisson"/></li>
-									<li id="lir">Temps de repos : <xsl:value-of select="TpsRepos"/></li>
-								</ul>
-							</td>
+							<th>Image</th>
+							<th class="nomRct">Nom</th>
+							<th>Information</th>
 						</tr>
-						</tbody>
-					</div>
-				</xsl:for-each>
-			</table>
+					</thead>
+					<xsl:for-each select="//Recette">
+					<div class="ingTable">
+						<tbody>
+							<tr>
+								<td><img src="{Photo}" alt="#" class="img-rounded" height="100px" width="100px"/></td>
+								<td><a href="./recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a></td>
+								<td>
+									<ul>
+										<li id="lir">Nombre de personne : <xsl:value-of select="NbPersonnes"/></li>
+										<li id="lir">Temps de préparation : <xsl:value-of select="TpsPreparation"/></li>
+										<li id="lir">Temps de cuisson : <xsl:value-of select="TpsCuisson"/></li>
+										<li id="lir">Temps de repos : <xsl:value-of select="TpsRepos"/></li>
+									</ul>
+								</td>
+							</tr>
+							</tbody>
+						</div>
+					</xsl:for-each>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>
@@ -144,9 +150,10 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 		<!-- Fin Navbarre -->
-		
-	<h1 style="text-decoration: underline;">Liste des ingrédients :</h1>
-	<xsl:call-template name="ing"/>
+		<div class="ingCorp">
+			<h1 style="text-decoration: underline;">Liste des ingrédients :</h1>
+			<xsl:call-template name="ing"/>
+		</div>
 	</body>
 </html>
 
@@ -185,9 +192,10 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 		<!-- Fin Navbarre -->
-		
-		<h1 style="text-decoration: underline;">Liste des auteurs:</h1>
-		<xsl:call-template name="auteurs"/>
+		<div class="ingCorp">
+			<h1 style="text-decoration: underline;">Liste des auteurs:</h1>
+			<xsl:call-template name="auteurs"/>
+		</div>
 	</body>
 </html>
 
@@ -228,9 +236,9 @@
 		</nav>
 		<!-- Fin Navbarre -->
 		
-		<div>
+		<div class="ingCorp">
 			<h2 id="{generate-id(@ID)}"><xsl:value-of select="Titre"/> :</h2>
-	    	<div class="imgRecette"><img alt="{Titre}" class="img-rounded" src="../{Photo}" width="500px" height="500px"/></div>
+	    	<div class="imgRecette"><img alt="{Titre}" class="img-rounded" src="{Photo}" width="500px" height="500px"/></div>
 			<div class="resumeRecette">
 				<table>
 					<tbody>
@@ -273,8 +281,10 @@
 						</tr>
 						<xsl:for-each select="ListeIngredients/Ingredients">
 						<tr>
-							<td class="rct" ><xsl:value-of select="key('ing',@IDIngredientRef)"/></td>
-							<td class="rct" ><xsl:value-of select="."/></td>		
+							<xsl:for-each select="key('ing',@IDIngredientRef)">
+							<td class="rct" ><xsl:value-of select="Nom"/></td>
+							</xsl:for-each>
+							<td class="rct" ><xsl:value-of select="Quantite"/></td>		
 						</tr>
 						</xsl:for-each>
 					</tbody>
@@ -282,7 +292,7 @@
 			</div><br/>
 			<div>
 				<h4>Description :</h4>
-				<div> <xsl:value-of select="Desc"/></div>
+				<div> <xsl:copy-of select="Preparation|text()"/></div>
 				<h4>Note : </h4>
 				<div><xsl:value-of select="Note"/></div>
 			</div>
@@ -298,6 +308,7 @@
 		<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="../style.css" rel="stylesheet" media="all" type="text/css"/>
+		<link href="../bootstrap.css" rel="stylesheet" media="all" type="text/css"/>
 		<title></title>
 	</head>
 	<body>
@@ -328,15 +339,15 @@
 		</nav>
 		<!-- Fin Navbarre -->
 		
-	<div id="links">
-        <a href="../recettes.html">Recettes</a><br/>
-		<a href="../ingredients.html">Ingredients</a><br/>
-		<a href="../auteurs.html">Auteurs</a><br/>
-	</div>
-	<div>
-		<h2 id="{generate-id(@IDAuteur)}"><xsl:value-of select="@IDAuteur"/></h2>
-		<xsl:value-of select="*"/>
-	</div>
+		<div class="ingCorp">
+			<h2 id="{generate-id(@IDAuteur)}"><xsl:value-of select="Pseudo"/></h2>
+			<ul>
+				<li>Nom : <xsl:value-of select="Nom"/></li>
+				<li>Pays : <xsl:value-of select="Pays"/></li>
+				<li>Sexe : <xsl:value-of select="Sexe"/></li>
+				<li>Biographie : <xsl:value-of select="Bio"/></li>
+			</ul>
+		</div>
 	</body>
 </html>
 	</xsl:result-document>
@@ -347,21 +358,46 @@
 		<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="../style.css" rel="stylesheet" media="all" type="text/css"/>
+		<link href="../bootstrap.css" rel="stylesheet" media="all" type="text/css"/>
 		<title></title>
 	</head>
 	<body>
-	<div id="links">
-        <a href="../recettes.html">Recettes</a><br/>
-		<a href="../ingredients.html">Ingredients</a><br/>
-		<a href="../auteurs.html">Auteurs</a><br/>
-	</div>
-	<div>
-		<h2 id="{generate-id(@IDIngredient)}"><xsl:value-of select="Nom"/></h2>
-			<xsl:value-of select="ApportNut"/>
-			<xsl:value-of select="ApportEn"/>
-			<xsl:value-of select="Saison"/>
-			<p><xsl:value-of select="Descriptif"/></p>
-	</div>
+		<!-- Début Navbarre -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="../index.html">xml Cook</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		      	<li><a href="../index.html">Accueil </a></li>
+		        <li><a href="../recettes.html">Recettes </a></li>
+		        <li class="active"><a href="../ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
+		        <li><a href="../auteurs.html">Auteurs</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!-- Fin Navbarre -->
+
+		<div class="ingCorp">
+			<h2 id="{generate-id(@IDIngredient)}"><xsl:value-of select="Nom"/></h2>
+			<ul>
+				<li>Apport nutritionnel : <xsl:value-of select="ApportNut"/></li>
+				<li>Apport énergétique : <xsl:value-of select="ApportEn"/></li>
+				<li>Saison : <xsl:value-of select="Saison"/></li>
+			</ul>
+			<div><xsl:copy-of select="Descriptif|text()"/></div>
+		</div>
 	</body>
 </html>
 	</xsl:result-document>
@@ -417,15 +453,15 @@
 		<thead>
 			<tr>
 				<td>Pseudo</td>
-				<td>Pay</td>
+				<td>Pays</td>
 				<td>Sexe</td>
 			</tr>
 		</thead>
 		<tbody>
 			<xsl:for-each select="//Auteur">
 				<tr>
-					<td><h5 id="{generate-id(@IDAuteur)}"><a href="Auteurs/auteur-{generate-id(@IDAuteur)}.html"><xsl:value-of select="@IDAuteur"/></a></h5></td>
-					<td><xsl:value-of select="Pays"/></td>
+					<td class="autTd"><h5 id="{generate-id(@IDAuteur)}"><a href="Auteurs/auteur-{generate-id(@IDAuteur)}.html"><xsl:value-of select="Nom"/></a></h5></td>
+					<td class="autTd"><xsl:value-of select="Pays"/></td>
 					<td><xsl:value-of select="Sexe"/></td>
 				</tr>
 			</xsl:for-each>
@@ -458,6 +494,10 @@
 		<li><a href="#{generate-id(@IDIngredient)}"><xsl:value-of select="Nom"/></a></li>
 	</xsl:for-each>
 	</ul>
+</xsl:template>
+
+<xsl:template name="ing2">
+	<xsl:value-of select="Nom"/>
 </xsl:template>
 
 <xsl:template name="ing">
