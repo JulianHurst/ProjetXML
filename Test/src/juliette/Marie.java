@@ -66,7 +66,7 @@ public class Marie {
 		static void createweb() throws Throwable{
 			DocumentBuilderFactory fac=DocumentBuilderFactory.newInstance();
 			DocumentBuilder db=fac.newDocumentBuilder();
-			Document doc = db.parse("Cuisine.xml");
+			Document doc = db.parse("out.xml");
 			//TransformerFactory facto = TransformerFactory.newInstance();
 			TransformerFactory facto = new net.sf.saxon.TransformerFactoryImpl();
 			Transformer t=facto.newTransformer(new StreamSource("Cuisinek.xsl"));
