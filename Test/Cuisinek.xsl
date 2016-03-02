@@ -308,7 +308,7 @@
 			</div><br/>
 			<div>
 				<h4>Description :</h4>
-				<div> <xsl:copy-of select="Preparation|text()"/></div>
+				<div> <xsl:copy-of select="Preparation"/></div>
 				<h4>Note : </h4>
 				<div><xsl:value-of select="Note"/></div>
 			</div>
@@ -421,7 +421,7 @@
 				<li>Apport nutritionnel : <xsl:value-of select="ApportNut"/></li>
 				<li>Apport énergétique : <xsl:value-of select="ApportEn"/></li>
 			</ul>
-			<div><xsl:copy-of select="Descriptif|text()"/></div>
+			<div><xsl:copy-of select="Descriptif"/></div>
 		</div>
 	</body>
 </html>
