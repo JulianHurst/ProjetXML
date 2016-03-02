@@ -6,7 +6,7 @@
 
 <xsl:template match="/">
 
-<xsl:result-document href="file:///C:/Users/kelku/Documents/GitHub/ProjetXML/Test/out/index.html">
+<xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/index.html">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="style.css" rel="stylesheet" media="all" type="text/css"/>
@@ -37,16 +37,68 @@
 		        <li><a href="recettes.html">Recettes </a></li>
 		        <li><a href="ingredients.html">Ingredients</a></li>
 		        <li><a href="auteurs.html">Auteurs</a></li>
+                        <li><a href="categories.html">Catégories</a></li>
 		        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+                <div class="ingCorp">
+                        <div class="3rct">
+                                        <table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                <th>Image</th>
+                                                                <th class="nomRct">Nom</th>
+                                                                <th>Information</th>
+                                                        </tr>
+                                                </thead>
+                                        <xsl:for-each select="//Recette">
+                                                <xsl:choose>
+                                                        <xsl:when test="@ID = 'r2830'">
+                                                                <xsl:call-template name="rctTbl"/>
+                                                        </xsl:when>
+                                                        <xsl:when test="@ID = 'r3136'">
+                                                                <xsl:call-template name="rctTbl"/>
+                                                        </xsl:when>
+                                                        <xsl:when test="@ID = 'r4275'">
+                                                                <xsl:call-template name="rctTbl"/>
+                                                        </xsl:when>
+                                                </xsl:choose>
+                                        </xsl:for-each>
+                                </table>
+                          </div>
+                          <div class="3ing">
+                                        <table class="table">
+                                                <thead>
+                                                        <tr>
+                                                                <th>Ingrédient</th>
+                                                                <th>Apport nutritionnel</th>
+                                                                <th>Apport énergétique</th>
+                                                                <th>Saison</th>
+                                                        </tr>
+                                                </thead>
+                                        <xsl:for-each select="//Ingredient">
+                                                <xsl:choose>
+                                                        <xsl:when test="@IDIngredient = 't142'">
+                                                                <xsl:call-template name="ingTbl"/>
+                                                        </xsl:when>
+                                                        <xsl:when test="@IDIngredient = 's36'">
+                                                                <xsl:call-template name="ingTbl"/>
+                                                        </xsl:when>
+                                                        <xsl:when test="@IDIngredient = 'ch115'">
+                                                                <xsl:call-template name="ingTbl"/>
+                                                        </xsl:when>
+                                                </xsl:choose>
+                                        </xsl:for-each>
+                                </table>
+                          </div>
+                  </div>                
 	</body>
 </html>
 
 </xsl:result-document>
-<xsl:result-document href="file:///C:/Users/kelku/Documents/GitHub/ProjetXML/Test/out/recettes.html">
+<xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/recettes.html">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="style.css" rel="stylesheet" media="all" type="text/css"/>
@@ -78,14 +130,15 @@
 			        <li class="active"><a href="recettes.html">Recettes <span class="sr-only">(current)</span></a></li>
 			        <li><a href="ingredients.html">Ingredients</a></li>
 			        <li><a href="auteurs.html">Auteurs</a></li>
+                                <li><a href="categories.html">Catégories</a></li>
 			        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
-		</div>
+		</div>                
 		<div class="ingCorp">
-			<h1 style="text-decoration: underline;">Liste des recettes :</h1>
+                    <h1 style="text-decoration: underline;">Liste des recettes :</h1>
 			<div class="ingTable">
 				<table class="table">
 					<thead>
@@ -121,7 +174,7 @@
 
 </xsl:result-document>
 
-<xsl:result-document href="file:///C:/Users/kelku/Documents/GitHub/ProjetXML/Test/out/ingredients.html">
+<xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/ingredients.html">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="style.css" rel="stylesheet" media="all" type="text/css"/>
@@ -153,6 +206,7 @@
 		        <li><a href="recettes.html">Recettes </a></li>
 		        <li class="active"><a href="ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
 		        <li><a href="auteurs.html">Auteurs</a></li>
+                        <li><a href="categories.html">Catégories</a></li>
 		        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -167,7 +221,7 @@
 </html>
 
 </xsl:result-document>
-<xsl:result-document href="file:///C:/Users/kelku/Documents/GitHub/ProjetXML/Test/out/auteurs.html">
+<xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/auteurs.html">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="style.css" rel="stylesheet" media="all" type="text/css"/>
@@ -199,6 +253,7 @@
 		        <li><a href="recettes.html">Recettes </a></li>
 		        <li><a href="ingredients.html">Ingredients</a></li>
 		        <li class="active"><a href="auteurs.html">Auteurs<span class="sr-only">(current)</span></a></li>
+                        <li><a href="categories.html">Catégories</a></li>
 		        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -211,10 +266,193 @@
 		</div>
 	</body>
 </html>
-
 </xsl:result-document>
+
+<xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/categories.html">
+    <html>
+        <head>
+            <link href="style.css" rel="stylesheet" media="all" type="text/css"/>
+            <link href="bootstrap.css" rel="stylesheet" media="all" type="text/css"/>
+            <title></title>
+        </head>
+        <body>
+            <div class="header">
+			<img src="images/logo.png" alt="#" height="150px"/>
+		</div>
+		<!-- Début Navbarre -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">xml Cook</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		      	<li><a href="index.html">Accueil </a></li>
+		        <li><a href="recettes.html">Recettes </a></li>
+		        <li><a href="ingredients.html">Ingredients</a></li>
+		        <li><a href="auteurs.html">Auteurs</a></li>
+                        <li class="active"><a href="categories.html">Catégories<span class="sr-only">(current)</span></a></li>
+		        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!-- Fin Navbarre -->
+            <div class="ingCorp">
+                <h1 style="text-decoration: underline;">Liste des catégories : </h1>
+                <ul>
+                    <xsl:for-each select="//Category">
+                        <li>
+                            <xsl:choose>
+                                <xsl:when test="SousCategory">                    
+                                    <a href="Categories/category-{generate-id(@catid)}.html"><xsl:value-of select="Nom"/></a> : <xsl:value-of select="Descriptif"/>                              
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="Nom"/> : <xsl:value-of select="Descriptif"/>  
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </li>            
+                    </xsl:for-each>
+                </ul>
+            </div>
+        </body>
+    </html>
+</xsl:result-document>
+
+<xsl:for-each select="//Category">
+    <xsl:if test="SousCategory">  
+        <xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/Categories/category-{generate-id(@catid)}.html">
+        <html>
+            <head>
+                <link href="../style.css" rel="stylesheet" media="all" type="text/css"/>
+                <link href="../bootstrap.css" rel="stylesheet" media="all" type="text/css"/>
+                <title></title>
+            </head>
+            <body>
+                <div class="header">
+			<img src="../images/logo.png" alt="#" height="150px"/>
+		</div>
+		<!-- Début Navbarre -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">xml Cook</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		      	<li><a href="../index.html">Accueil </a></li>
+		        <li><a href="../recettes.html">Recettes </a></li>
+		        <li><a href="../ingredients.html">Ingredients</a></li>
+		        <li><a href="../auteurs.html">Auteurs</a></li>
+                        <li class="active"><a href="../categories.html">Catégories<span class="sr-only">(current)</span></a></li>
+		        <li><a href="../xqueryout.html">Auteurs-Recette (xquery out)</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!-- Fin Navbarre -->
+                <div class="ingCorp">
+                    <h1 style="text-decoration: underline;">Liste des sous-catégories de <xsl:value-of select="Nom"/> : </h1>
+                    <ul>
+                        <xsl:for-each select="SousCategory">
+                            <li><a href="../SousCategories/souscategory-{generate-id(@scatid)}.html"><xsl:value-of select="Nom"/></a> : <xsl:value-of select="Descriptif"/></li>
+                        </xsl:for-each>
+                    </ul>                    
+                </div>
+            </body>
+        </html>
+        </xsl:result-document>
+    </xsl:if>
+</xsl:for-each>
+
+<xsl:for-each select="//SousCategory">      
+        <xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/SousCategories/souscategory-{generate-id(@scatid)}.html">
+        <html>
+            <head>
+                <link href="../style.css" rel="stylesheet" media="all" type="text/css"/>
+                <link href="../bootstrap.css" rel="stylesheet" media="all" type="text/css"/>
+                <title></title>
+            </head>
+            <body>
+                <div class="header">
+			<img src="../images/logo.png" alt="#" height="150px"/>
+		</div>
+		<!-- Début Navbarre -->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">xml Cook</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		      	<li><a href="../index.html">Accueil </a></li>
+		        <li><a href="../recettes.html">Recettes </a></li>
+		        <li><a href="../ingredients.html">Ingredients</a></li>
+		        <li><a href="../auteurs.html">Auteurs</a></li>
+                        <li class="active"><a href="../categories.html">Catégories<span class="sr-only">(current)</span></a></li>
+		        <li><a href="../xqueryout.html">Auteurs-Recette (xquery out)</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!-- Fin Navbarre -->
+                <xsl:variable name="souscid" select="@scatid"/>
+                <div class="ingCorp">
+                    <h1 style="text-decoration: underline;">Liste des recettes de <xsl:value-of select="Nom"/> : </h1>
+                    <xsl:variable name="output">
+                    <ul>
+                        
+                            <xsl:for-each select="//Recette">
+                                <xsl:if test="SousCategorie/@scatref=$souscid">
+                                    <li><a href="../Recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a><br/>
+                                    <xsl:value-of select="Difficulte"/><br/>
+                                    <xsl:value-of select="Resume"/>                                
+                                    </li>
+                                </xsl:if>
+                            </xsl:for-each>  
+                         
+                        
+                    </ul>
+                    </xsl:variable> 
+                    <xsl:copy-of select="$output"/>                    
+                    <xsl:if test="normalize-space($output) = ''">
+                        <h1>Il n'y a pas de recettes pour cette catégorie.</h1>                        
+                    </xsl:if>
+                </div>
+            </body>
+        </html>
+        </xsl:result-document>
+</xsl:for-each>
+
 <xsl:for-each select="//Recette">
-	<xsl:result-document href="file:///C:/Users/kelku/Documents/GitHub/ProjetXML/Test/out/Recettes/recette-{generate-id(@ID)}.html">
+	<xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/Recettes/recette-{generate-id(@ID)}.html">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="../style.css" rel="stylesheet" media="all" type="text/css"/>
@@ -246,6 +484,7 @@
 		        <li class="active"><a href="../recettes.html">Recettes </a></li>
 		        <li><a href="../ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
 		        <li><a href="../auteurs.html">Auteurs</a></li>
+                        <li><a href="../categories.html">Catégories</a></li>
 		        <li><a href="../xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -321,7 +560,7 @@
 </xsl:for-each>
 
 <xsl:for-each select="//Auteur">
-	<xsl:result-document href="file:///C:/Users/kelku/Documents/GitHub/ProjetXML/Test/out/Auteurs/auteur-{generate-id(@IDAuteur)}.html">
+	<xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/Auteurs/auteur-{generate-id(@IDAuteur)}.html">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="../style.css" rel="stylesheet" media="all" type="text/css"/>
@@ -353,6 +592,7 @@
 		        <li><a href="../recettes.html">Recettes </a></li>
 		        <li><a href="../ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
 		        <li class="active"><a href="../auteurs.html">Auteurs</a></li>
+                        <li><a href="../categories.html">Catégories</a></li>
 		        <li><a href="../xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -377,7 +617,7 @@
 </xsl:for-each>
 
 <xsl:for-each select="//Ingredient">
-	<xsl:result-document href="file:///C:/Users/kelku/Documents/GitHub/ProjetXML/Test/out/Ingredients/ing-{generate-id(@IDIngredient)}.html">
+	<xsl:result-document href="file:////home/juju/sitecuis/new/ProjetXML/Test/out/Ingredients/ing-{generate-id(@IDIngredient)}.html">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<link href="../style.css" rel="stylesheet" media="all" type="text/css"/>
@@ -409,6 +649,7 @@
 		        <li><a href="../recettes.html">Recettes </a></li>
 		        <li class="active"><a href="../ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
 		        <li><a href="../auteurs.html">Auteurs</a></li>
+                        <li><a href="../categories.html">Catégories</a></li>
 		        <li><a href="../xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -547,5 +788,33 @@
 			</xsl:for-each>
 		</table>
 	</div>
+</xsl:template>
+<xsl:template name="rctTbl">
+        <div class="ingTable">
+                <tbody>
+                        <tr>
+                                <td><img src="{Photo}" alt="#" class="img-rounded" height="100px" width="100px"/></td>
+                                <td><a href="./recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a></td>
+                                <td>
+                                        <ul>
+                                                <li id="lir">Nombre de personne : <xsl:value-of select="NbPersonnes"/></li>
+                                                <li id="lir">Temps de préparation : <xsl:value-of select="TpsPreparation"/></li>
+                                                <li id="lir">Temps de cuisson : <xsl:value-of select="TpsCuisson"/></li>
+                                                <li id="lir">Temps de repos : <xsl:value-of select="TpsRepos"/></li>
+                                        </ul>
+                                </td>
+                        </tr>
+                </tbody>
+        </div>
+</xsl:template>
+<xsl:template name="ingTbl">
+        <div class="ingTable">
+                <tbody>
+                        <td class="tdIng"><h5 id="{generate-id(@IDIngredient)}"><a href="Ingredients/ing-{generate-id(@IDIngredient)}.html"><xsl:value-of select="Nom"/></a></h5></td>
+                        <td class="tdIng"><xsl:value-of select="ApportNut"/></td>
+                        <td class="tdIng"><xsl:value-of select="ApportEn"/></td>
+                        <td class="tdIng"><xsl:value-of select="Saison"/></td>
+                </tbody>
+        </div>
 </xsl:template>
 </xsl:stylesheet>

@@ -29,9 +29,10 @@ xquery version "1.0" encoding "utf-8";
 		      <ul class="nav navbar-nav">
 		      	<li><a href="index.html">Accueil </a></li>
 		        <li><a href="recettes.html">Recettes </a></li>
-		        <li><a href="ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
+		        <li><a href="ingredients.html">Ingredients</a></li>
 		        <li><a href="auteurs.html">Auteurs</a></li>
-		        <li class="active"><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
+		        <li><a href="categories.html">Catégories</a></li>
+                <li class="active"><a href="./xqueryout.html">Auteurs-Recette (xquery out)<span class="sr-only">(current)</span></a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
