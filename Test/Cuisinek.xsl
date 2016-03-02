@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div class="header">
-			
+			<img src="./images/logo.png" alt="#" height="150px"/>
 		</div>
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -37,6 +37,7 @@
 		        <li><a href="recettes.html">Recettes </a></li>
 		        <li><a href="ingredients.html">Ingredients</a></li>
 		        <li><a href="auteurs.html">Auteurs</a></li>
+		        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -53,7 +54,9 @@
 		<title></title>
 	</head>
 	<body>
-	
+		<div class="header">
+			<img src="./images/logo.png" alt="#" height="150px"/>
+		</div>
 		<div id="links">
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
@@ -75,6 +78,7 @@
 			        <li class="active"><a href="recettes.html">Recettes <span class="sr-only">(current)</span></a></li>
 			        <li><a href="ingredients.html">Ingredients</a></li>
 			        <li><a href="auteurs.html">Auteurs</a></li>
+			        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
@@ -95,7 +99,7 @@
 						<tbody>
 							<tr>
 								<td><img src="{Photo}" alt="#" class="img-rounded" height="100px" width="100px"/></td>
-								<td><a href="Recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a></td>
+								<td><a href="./recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a></td>
 								<td>
 									<ul>
 										<li id="lir">Nombre de personne : <xsl:value-of select="NbPersonnes"/></li>
@@ -124,6 +128,9 @@
 		<title></title>
 	</head>
 	<body>
+		<div class="header">
+			<img src="./images/logo.png" alt="#" height="150px"/>
+		</div>
 		<!-- Début Navbarre -->
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -145,6 +152,7 @@
 		        <li><a href="recettes.html">Recettes </a></li>
 		        <li class="active"><a href="ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
 		        <li><a href="auteurs.html">Auteurs</a></li>
+		        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -166,6 +174,9 @@
 		<title></title>
 	</head>
 	<body>
+		<div class="header">
+			<img src="./images/logo.png" alt="#" height="150px"/>
+		</div>
 		<!-- Début Navbarre -->
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -187,6 +198,7 @@
 		        <li><a href="recettes.html">Recettes </a></li>
 		        <li><a href="ingredients.html">Ingredients</a></li>
 		        <li class="active"><a href="auteurs.html">Auteurs<span class="sr-only">(current)</span></a></li>
+		        <li><a href="./xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -209,6 +221,9 @@
 		<title></title>
 	</head>
 	<body>
+		<div class="header">
+			<img src="../images/logo.png" alt="#" height="150px"/>
+		</div>
 		<!-- Début Navbarre -->
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -230,6 +245,7 @@
 		        <li class="active"><a href="../recettes.html">Recettes </a></li>
 		        <li><a href="../ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
 		        <li><a href="../auteurs.html">Auteurs</a></li>
+		        <li><a href="../xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -292,7 +308,7 @@
 			</div><br/>
 			<div>
 				<h4>Description :</h4>
-				<div> <xsl:copy-of select="Preparation"/></div>
+				<div> <xsl:copy-of select="Preparation|text()"/></div>
 				<h4>Note : </h4>
 				<div><xsl:value-of select="Note"/></div>
 			</div>
@@ -312,6 +328,9 @@
 		<title></title>
 	</head>
 	<body>
+		<div class="header">
+			<img src="../images/logo.png" alt="#" height="150px"/>
+		</div>
 		<!-- Début Navbarre -->
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -331,8 +350,9 @@
 		      <ul class="nav navbar-nav">
 		      	<li><a href="../index.html">Accueil </a></li>
 		        <li><a href="../recettes.html">Recettes </a></li>
-		        <li><a href="../ingredients.html">Ingredients</a></li>
-		        <li class="active"><a href="../auteurs.html">Auteurs<span class="sr-only">(current)</span></a></li>
+		        <li><a href="../ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
+		        <li class="active"><a href="../auteurs.html">Auteurs</a></li>
+		        <li><a href="../xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -345,9 +365,7 @@
 				<li>Nom : <xsl:value-of select="Nom"/></li>
 				<li>Pays : <xsl:value-of select="Pays"/></li>
 				<li>Sexe : <xsl:value-of select="Sexe"/></li>
-				 <xsl:if test="Bio">
-                                    <li>Biographie : <xsl:value-of select="Bio"/></li>
-                                </xsl:if>
+				<li>Biographie : <xsl:value-of select="Bio"/></li>
 			</ul>
 		</div>
 	</body>
@@ -364,6 +382,9 @@
 		<title></title>
 	</head>
 	<body>
+		<div class="header">
+			<img src="../images/logo.png" alt="#" height="150px"/>
+		</div>
 		<!-- Début Navbarre -->
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -385,6 +406,7 @@
 		        <li><a href="../recettes.html">Recettes </a></li>
 		        <li class="active"><a href="../ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
 		        <li><a href="../auteurs.html">Auteurs</a></li>
+		        <li><a href="../xqueryout.html">Auteurs-Recette (xquery out)</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -396,8 +418,9 @@
 			<ul>
 				<li>Apport nutritionnel : <xsl:value-of select="ApportNut"/></li>
 				<li>Apport énergétique : <xsl:value-of select="ApportEn"/></li>
+				<li>Saison : <xsl:value-of select="Saison"/></li>
 			</ul>
-			<div><xsl:copy-of select="Descriptif"/></div>
+			<div><xsl:copy-of select="Descriptif|text()"/></div>
 		</div>
 	</body>
 </html>
