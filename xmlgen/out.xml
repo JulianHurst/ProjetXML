@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">
+<!--<!DOCTYPE Cuisines SYSTEM "Cuisine.dtd">-->
 <?xml-stylesheet type="text/xsl" href="ProjetXML/xsl/Cuisine-xsltproc.xsl"?>
-<Cuisines>
+<Cuisines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Cuisine.xsd">
   <ListeRecette>
     <Recette ID="r2830">
       <Titre>Cake à la tomate farcie</Titre>
