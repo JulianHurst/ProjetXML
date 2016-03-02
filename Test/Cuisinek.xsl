@@ -396,9 +396,8 @@
 			<ul>
 				<li>Apport nutritionnel : <xsl:value-of select="ApportNut"/></li>
 				<li>Apport énergétique : <xsl:value-of select="ApportEn"/></li>
-				<li>Saison : <xsl:value-of select="Saison"/></li>
 			</ul>
-			<div><xsl:copy-of select="Descriptif|text()"/></div>
+			<div><xsl:copy-of select="Descriptif"/></div>
 		</div>
 	</body>
 </html>
