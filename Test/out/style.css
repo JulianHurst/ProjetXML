@@ -7,3 +7,20 @@
 .tdIng{
 	padding: 0;
 }
+.imgRecette{
+	float: left;
+	margin: 0 20 0 20;
+}
+
+.rct{
+	padding: 2 25 2 5;
+	border-bottom: solid black 1px;
+}
+.rctSpacing{
+	padding: 5 5 5 5;
+	border-bottom: dotted;
+	border-top: dotted;
+}
+.resumeRecette{
+	min-height: 500px;
+}
