@@ -1,0 +1,49 @@
+/*http://fr.freepik.com/icones-gratuites/restaurant-symbole-d&-39;une-croix-de-fourchette-et-un-couteau-quelques_751084.htm (image couteau/fourchette croisée)*/
+.ingTable{
+	width: 80%;
+	margin: auto;
+}
+.nomRct{
+	width:30%;
+}
+.tableIng{
+	width: 80%;
+	margin: auto;
+}
+.tdIng{
+	padding: 0;
+}
+.imgRecette{
+	float: left;
+	margin: 0 20 0 20;
+}
+
+.rct{
+	padding: 2 25 2 5;
+	border-bottom: solid black 1px;
+}
+.rctSpacing{
+	padding: 5 5 5 5;
+	border-bottom: dotted;
+	border-top: dotted;
+}
+.resumeRecette{
+	min-height: 500px;
+}
+.ingCorp{
+	margin:auto;
+	width: 70%;
+	background-color: white;
+}
+.autTd{
+	width:30%;
+}
+.ingCorpA{
+	margin:auto;
+	width: 50%;
+	background-color: white;
+}
+.header{
+	background-image:linear-gradient(#c07616, #e59227);
+	height:200px;
+}
