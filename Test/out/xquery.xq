@@ -2,11 +2,13 @@ xquery version "1.0" encoding "utf-8";
 
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+       <link href="style.css" rel="stylesheet" media="all" type="text/css"></link>
+       <link href="bootstrap.css" rel="stylesheet" media="all" type="text/css"></link>
     </head>
 <body>
 		<div class="header">
-			<img src="../images/logo.png" alt="#" height="150px"/>
+			<img src="images/logo.png" alt="#" height="150px"/>
 		</div>
 		<!-- Début Navbarre -->
 		<nav class="navbar navbar-default">
@@ -21,7 +23,7 @@ xquery version "1.0" encoding "utf-8";
 		      </button>
 		      <a class="navbar-brand" href="../index.html">xml Cook</a>
 		    </div>
-		
+
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
@@ -44,7 +46,7 @@ return <div>{  (<h1>{ string("Auteur: "),string($a/Pseudo)}</h1>,<span>{string("
 		return <li>{ (string($c/Titre) ,
             for $sc in doc("out.xml")//SousCategory[@scatid=$c/SousCategorie/@scatref]
                 return (" | Sous-catégorie: ",string($sc/Nom)))
-            }</li> 
+            }</li>
  }</ul>
 )
 }</div>
