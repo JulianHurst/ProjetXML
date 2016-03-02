@@ -365,7 +365,9 @@
 				<li>Nom : <xsl:value-of select="Nom"/></li>
 				<li>Pays : <xsl:value-of select="Pays"/></li>
 				<li>Sexe : <xsl:value-of select="Sexe"/></li>
-				<li>Biographie : <xsl:value-of select="Bio"/></li>
+				<xsl:if test="Bio">
+					<li>Biographie : <xsl:value-of select="Bio"/></li>
+				</xsl:if>
 			</ul>
 		</div>
 	</body>
