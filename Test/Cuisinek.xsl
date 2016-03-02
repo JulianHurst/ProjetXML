@@ -85,6 +85,7 @@
 			</nav>
 		</div>
 		<div class="ingCorp">
+			<h1 style="text-decoration: underline;">Liste des recettes :</h1>
 			<div class="ingTable">
 				<table class="table">
 					<thead>
