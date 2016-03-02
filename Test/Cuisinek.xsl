@@ -331,8 +331,8 @@
 		      <ul class="nav navbar-nav">
 		      	<li><a href="../index.html">Accueil </a></li>
 		        <li><a href="../recettes.html">Recettes </a></li>
-		        <li class="active"><a href="../ingredients.html">Ingredients<span class="sr-only">(current)</span></a></li>
-		        <li><a href="../auteurs.html">Auteurs</a></li>
+		        <li><a href="../ingredients.html">Ingredients</a></li>
+		        <li class="active"><a href="../auteurs.html">Auteurs<span class="sr-only">(current)</span></a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
