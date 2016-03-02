@@ -99,7 +99,7 @@
 						<tbody>
 							<tr>
 								<td><img src="{Photo}" alt="#" class="img-rounded" height="100px" width="100px"/></td>
-								<td><a href="./recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a></td>
+								<td><a href="Recettes/recette-{generate-id(@ID)}.html"><xsl:value-of select="Titre"/></a></td>
 								<td>
 									<ul>
 										<li id="lir">Nombre de personne : <xsl:value-of select="NbPersonnes"/></li>
